@@ -19,29 +19,34 @@
     },
     "systemTray": {
       "iconPath": "icons/icon.png",
-      "iconAsTemplate": true
+      "iconAsTemplate": true,
+      "menuOnLeftClick": false
     },
     "windows": [
       {
-        "title": "vercel-toolbox",
-        "width": 440,
-        "height": 700,
+        "height": 540,
         "closable": false,
         "fullscreen": false,
         "minimizable": false,
-        "resizable": false,
-        "decorations": true,
+        "decorations": false,
         "hiddenTitle": true,
-        "titleBarStyle": "Transparent"
+        "resizable": false,
+        "skipTaskbar": true,
+        "title": "vercel-toolbox",
+        "titleBarStyle": "Transparent",
+        "transparent": true,
+        "visible": false,
+        "width": 440
       }
     ],
+    "macOSPrivateApi": true,
     "security": {
       "csp": null
     },
     "bundle": {
       "active": true,
       "targets": "all",
-      "identifier": "com.tauri.dev",
+      "identifier": "me.nax.vercel-toolbox",
       "icon": [
         "icons/32x32.png",
         "icons/128x128.png",
